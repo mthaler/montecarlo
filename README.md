@@ -1,2 +1,3 @@
 # montecarlo
-Monte Carlo code in Go
+
+Simple code that calculates an approximation of Pi using a Monte Carlo method.
