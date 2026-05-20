@@ -5,10 +5,12 @@ import (
 	"math/rand/v2"
 )
 
+const MaxIter = 10000000
+
 func main() {
 	i := 0
 	sum := 0
-	for i < 10000000 {
+	for i < MaxIter {
 		x := rand.Float64()
 		y := rand.Float64()
 		if x*x+y*y < 1 {
@@ -16,5 +18,5 @@ func main() {
 		}
 		i += 1
 	}
-	fmt.Printf("%g\n", float64(4*sum)/float64(10000000))
+	fmt.Printf("%g\n", float64(4*sum)/float64(MaxIter))
 }
